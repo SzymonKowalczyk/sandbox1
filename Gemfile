@@ -1,10 +1,11 @@
+
 ruby '2.3.3', engine: 'jruby', engine_version: '9.1.17.0'
 
 # These dependencies are forked in order to remove the LGPL'd setup.rb file:
 gem 'abstract', '1.0.0.d86eb2255aefb5c0ce4dd2351dbbf4b9e22264ad'
 gem 'activeresource-response'
 gem 'bcrypt-ruby'
-gem 'blue_ibm_catalog_import', '= 3.0.1'
+gem 'blue_ibm_catalog_import', '= 3.0.2'
 gem 'equivalent-xml', '0.6.0'
 gem 'erubis', '2.7.0.1.ed3659f9fdc6659f69fce047e9f57f0289d903d8'
 gem 'excon'
@@ -17,7 +18,7 @@ gem 'inherited_resources', '1.9.0.76ad413008d729c4b764caff0f46952d13a4ef62'
 gem 'json'
 gem 'json-schema', '~> 2.5.1'
 gem 'mail', require: nil
-gem 'nokogiri', '1.6.8.1.2a50ee845531ada7233a0443a500d204'
+gem 'nokogiri', '1.6.8.1.fc90d7a1defdc17564eb72b85bf8c2e0'
 gem 'rails', '= 5.1.7'
 gem 'rest-client', '= 1.8.0'
 gem 'ri_cal', '0.8.8.764df9150215e9a0d2560b4549d758cc'
