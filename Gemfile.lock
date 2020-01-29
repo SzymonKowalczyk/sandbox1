@@ -190,7 +190,8 @@ GEM
       cliver (~> 0.3.1)
       websocket-driver (>= 0.2.0)
     powerpack (0.1.2)
-    puma (3.2.0-java)
+    puma (4.3.1-java)
+      nio4r (~> 2.0)
     rack (2.0.7)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -359,7 +360,7 @@ DEPENDENCIES
   non-stupid-digest-assets
   phantomjs (= 1.9.8.0.efc930e9b3a2f8ed9ba851007d5c86beafd234e6)
   poltergeist (~> 1.9)
-  puma (= 3.2)
+  puma
   rails (= 5.1.7)
   rails-controller-testing
   rest-client (= 1.8.0)
