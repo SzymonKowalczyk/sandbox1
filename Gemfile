@@ -47,6 +47,7 @@ group :development, :test do
   gem 'jasmine', '2.99.37d002d4977c983aed8edc374e3adb58dbae390b'
   gem 'jasmine_junitxml_formatter'
   gem 'machinist', '= 1.0.6.be28caa89f36251c66619ca721440459a3b7e219'
+  gem 'rails-controller-testing'
   gem 'simplecov', require: nil
   gem 'simplecov-html', '= 0.8.0.1.0df13868c3dd9a42c7a6c5e5e2fbde205e607ac2', require: nil
   gem 'sprockets'
@@ -56,7 +57,7 @@ group :development do
   gem 'charlock_holmes-jruby'
   gem 'jruby-jars', '9.1.17.0'
   gem 'jruby-rack'
-  gem 'puma', '3.2'
+  gem 'puma'
   gem 'rubocop', '0.50.0', require: false
   gem 'warbler', '2.0.3'
   gem 'ya2yaml'
@@ -65,7 +66,6 @@ end
 group :test do
   gem 'ci_reporter_cucumber'
   gem 'ci_reporter_rspec'
-  gem 'rails-controller-testing'
   gem 'rspec-rails'
   gem 'timecop'
 end
