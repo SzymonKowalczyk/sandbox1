@@ -58,7 +58,7 @@ GEM
     bermuda (0.0.7)
       capybara (>= 2.0)
       cucumber (>= 0.10.0)
-    blue_ibm_catalog_import (3.0.3)
+    blue_ibm_catalog_import (9.2.19.0.1)
     builder (3.2.3)
     capybara (2.18.0)
       addressable
@@ -67,7 +67,11 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (>= 2.0, < 4.0)
+    capybara-selenium (0.0.6)
+      capybara
+      selenium-webdriver
     charlock_holmes-jruby (0.1.2-java)
+    childprocess (3.0.0)
     chronic (0.10.2)
     chunky_png (1.3.11)
     ci_reporter (2.0.0)
@@ -78,7 +82,6 @@ GEM
     ci_reporter_rspec (1.0.0)
       ci_reporter (~> 2.0)
       rspec (>= 2.14, < 4)
-    cliver (0.3.2)
     compass (1.0.3)
       chunky_png (~> 1.2)
       compass-core (~> 1.0.2)
@@ -185,12 +188,8 @@ GEM
     parser (2.6.0.0)
       ast (~> 2.4.0)
     phantomjs (1.9.8.0.efc930e9b3a2f8ed9ba851007d5c86beafd234e6)
-    poltergeist (1.18.1)
-      capybara (>= 2.1, < 4)
-      cliver (~> 0.3.1)
-      websocket-driver (>= 0.2.0)
     powerpack (0.1.2)
-    puma (4.3.1-java)
+    puma (4.3.3-java)
       nio4r (~> 2.0)
     rack (2.1.2)
     rack-test (1.1.0)
@@ -224,7 +223,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rainbow (2.2.2)
       rake
-    rake (12.3.2)
+    rake (13.0.1)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
@@ -275,6 +274,9 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
+    selenium-webdriver (3.142.7)
+      childprocess (>= 0.5, < 4.0)
+      rubyzip (>= 1.2.2)
     sequel (4.24.0.9d792a04e8ef0cea89ab8b94522b4942)
     simplecov (0.9.1)
       docile (~> 1.1.0)
@@ -310,6 +312,10 @@ GEM
       jruby-rack (>= 1.1.1, < 1.3)
       rake (>= 10.1.0)
       rubyzip (~> 1.0, < 1.4)
+    webdrivers (4.2.0)
+      nokogiri (~> 1.6)
+      rubyzip (>= 1.3.0)
+      selenium-webdriver (>= 3.0, < 4.0)
     websocket-driver (0.6.5-java)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
@@ -328,14 +334,16 @@ DEPENDENCIES
   awesome_print
   bcrypt-ruby
   bermuda
-  blue_ibm_catalog_import (= 3.0.3)
+  blue_ibm_catalog_import (= 9.2.19.0.1)
   capybara
+  capybara-selenium
   charlock_holmes-jruby
   chronic
   ci_reporter_cucumber
   ci_reporter_rspec
   compass-blueprint (~> 1.0.0)
   compass-rails
+  concurrent-ruby (~> 1.0, >= 1.0.5)
   cucumber
   cucumber-rails
   equivalent-xml (= 0.6.0)
@@ -359,7 +367,6 @@ DEPENDENCIES
   nokogiri (= 1.6.8.1.fc90d7a1defdc17564eb72b85bf8c2e0)
   non-stupid-digest-assets
   phantomjs (= 1.9.8.0.efc930e9b3a2f8ed9ba851007d5c86beafd234e6)
-  poltergeist (~> 1.9)
   puma
   rails (= 5.1.7)
   rails-controller-testing
@@ -371,6 +378,7 @@ DEPENDENCIES
   rufus-scheduler (~> 3.1.2)
   sass (= 3.4.22.9f9d211398c5530537031685b0101c30)
   sass-rails
+  selenium-webdriver
   sequel (= 4.24.0.9d792a04e8ef0cea89ab8b94522b4942)
   simplecov
   simplecov-html (= 0.8.0.1.0df13868c3dd9a42c7a6c5e5e2fbde205e607ac2)
@@ -381,6 +389,7 @@ DEPENDENCIES
   uglifier (~> 3.0.0)
   uuidtools (= 2.1.5.de05809f0c8ad134e3f30aae50959f3b)
   warbler (= 2.0.3)
+  webdrivers
   ya2yaml
   zip-zip
 

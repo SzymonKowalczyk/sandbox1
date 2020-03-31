@@ -4,7 +4,7 @@ ruby '2.3.3', engine: 'jruby', engine_version: '9.1.17.0'
 gem 'abstract', '1.0.0.d86eb2255aefb5c0ce4dd2351dbbf4b9e22264ad'
 gem 'activeresource-response'
 gem 'bcrypt-ruby'
-gem 'blue_ibm_catalog_import', '= 3.0.3'
+gem 'blue_ibm_catalog_import', '= 9.2.19.0.1'
 gem 'equivalent-xml', '0.6.0'
 gem 'erubis', '2.7.0.1.ed3659f9fdc6659f69fce047e9f57f0289d903d8'
 gem 'excon'
@@ -72,7 +72,9 @@ end
 group :cucumber do
   gem 'bermuda'
   gem 'capybara'
+  gem 'capybara-selenium'
   gem 'chronic'
+  gem 'concurrent-ruby', '~>1.0', '>=1.0.5'
   gem 'cucumber'
   gem 'cucumber-rails'
 
@@ -80,5 +82,7 @@ group :cucumber do
   gem 'phantomjs', '= 1.9.8.0.efc930e9b3a2f8ed9ba851007d5c86beafd234e6'
 
   # Bug in 1.6.0 with hidden elements, see https://github.com/teampoltergeist/poltergeist/issues/628
-  gem 'poltergeist', '~> 1.9'
+  # gem 'poltergeist', '~> 1.9'
+  gem 'selenium-webdriver'
+  gem 'webdrivers'
 end
