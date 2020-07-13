@@ -1,10 +1,11 @@
-ruby '2.3.3', engine: 'jruby', engine_version: '9.1.17.0'
+
+ruby '2.5.7', engine: 'jruby', engine_version: '9.2.11.1'
 
 # These dependencies are forked in order to remove the LGPL'd setup.rb file:
 gem 'abstract', '1.0.0.d86eb2255aefb5c0ce4dd2351dbbf4b9e22264ad'
 gem 'activeresource-response'
 gem 'bcrypt-ruby'
-gem 'blue_ibm_catalog_import', '= 9.2.19.0.1'
+gem 'blue_ibm_catalog_import', '= 9.2.21.0'
 gem 'equivalent-xml', '0.6.0'
 gem 'erubis', '2.7.0.1.ed3659f9fdc6659f69fce047e9f57f0289d903d8'
 gem 'excon'
@@ -18,7 +19,7 @@ gem 'json'
 gem 'json-schema', '~> 2.5.1'
 gem 'mail', require: nil
 gem 'nokogiri', '1.6.8.1.fc90d7a1defdc17564eb72b85bf8c2e0'
-gem 'rails', '= 5.1.7'
+gem 'rails', '= 5.2.4.3'
 gem 'rest-client', '= 1.8.0'
 gem 'ri_cal', '0.8.8.764df9150215e9a0d2560b4549d758cc'
 gem 'rubyzip'
@@ -36,7 +37,7 @@ group :assets do
   gem 'i18n-js', '~> 3.0.0.rc12'
   gem 'non-stupid-digest-assets'
   gem 'sass', '3.4.22.9f9d211398c5530537031685b0101c30'
-  gem 'sass-rails'
+  gem 'sass-rails', '< 5.1'
   gem 'therubyrhino'
   gem 'uglifier', '~> 3.0.0'
 end
@@ -54,7 +55,7 @@ end
 
 group :development do
   gem 'charlock_holmes-jruby'
-  gem 'jruby-jars', '9.1.17.0'
+  gem 'jruby-jars', '9.2.11.1'
   gem 'jruby-rack'
   gem 'puma'
   gem 'rubocop', '0.50.0', require: false
