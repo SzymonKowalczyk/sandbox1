@@ -3,7 +3,7 @@
   "version": "*******",
   "private": true,
   "dependencies": {
-    "axios": "0.18.1",
+    "axios": "0.21.1",
     "babel-eslint": "9.0.0",
     "carbon-components": "9.48.2",
     "carbon-components-react": "6.60.1",
